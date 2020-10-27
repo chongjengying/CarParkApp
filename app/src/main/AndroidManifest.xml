@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.carparkapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Payment"></activity>
+        <activity android:name=".ParkingHistory" />
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".UserProfile" />
+        <activity android:name=".AddVehicle" />
+        <activity android:name=".MyVehicle" />
+        <activity android:name=".CarParkSlot" />
+        <activity android:name=".DateTime" />
+        <activity android:name=".PricingListLocation" />
+        <activity android:name=".LocationSelection" />
+        <activity android:name=".Homepage" />
+        <activity android:name=".SignUp"/>
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
