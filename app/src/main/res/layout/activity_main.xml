@@ -35,25 +35,30 @@
         android:id="@+id/textForgetPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="148dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/forget_password"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
     <EditText
         android:id="@+id/editTextPassword"
-        android:layout_width="250dp"
+        android:layout_width="280dp"
         android:layout_height="40dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
         android:autofillHints=""
         android:ems="10"
+        android:drawableLeft="@drawable/ic_outline_vpn_key_24"
+        android:drawablePadding="5dp"
         android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress"
         tools:ignore="MissingConstraints" />
 
@@ -70,20 +75,7 @@
         app:layout_constraintStart_toStartOf="@+id/toolbar"
         app:layout_constraintTop_toTopOf="@+id/toolbar" />
 
-    <ImageView
-        android:id="@+id/imagePassword"
-        android:layout_width="47dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="28dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnSignUp"
-        app:layout_constraintEnd_toStartOf="@+id/editTextPassword"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextPassword"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="ContentDescription"
-        tools:srcCompat="@drawable/password" />
+
 
     <Button
         android:id="@+id/btnLogin"
@@ -115,11 +107,14 @@
 
     <EditText
         android:id="@+id/editTextEmailAddress"
-        android:layout_width="250dp"
+        android:layout_width="280dp"
         android:layout_height="40dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginEnd="24dp"
         android:autofillHints=""
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="5dp"
         android:ems="10"
         android:gravity="top"
         android:hint="@string/email"
@@ -127,6 +122,7 @@
         android:minHeight="35dp"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         tools:ignore="MissingConstraints" />
 
@@ -143,21 +139,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextLogo"
         tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageEmail"
-        android:layout_width="49dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/editTextEmailAddress"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextEmailAddress"
-        tools:ignore="ContentDescription"
-        tools:srcCompat="@drawable/email" />
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

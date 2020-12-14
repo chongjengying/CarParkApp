@@ -1,234 +1,247 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".SignUp">
+    android:layout_height="match_parent">
 
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="327dp"
-        android:layout_height="77dp"
-        android:layout_marginTop="8dp"
-        android:background="#5d54a4"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textLogo2"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/editTextEmailAddress7"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="60dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:gravity="top"
-        android:hint="@string/password"
-        android:inputType="textEmailAddress"
-        android:minHeight="35dp"
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress6"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/editTextEmailAddress8"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="60dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:gravity="top"
-        android:hint="@string/enterconfirmpassword"
-        android:inputType="textEmailAddress"
-        android:minHeight="35dp"
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress7"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textLogo2"
-        android:layout_width="315dp"
-        android:layout_height="96dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/lobster"
-        android:text="@string/textLogo"
-        android:textSize="39sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/carparklogo"
-        tools:ignore="ContentDescription" />
-
-    <Button
-        android:id="@+id/blockSignUpButton"
-        android:layout_width="100dp"
-        android:layout_height="47dp"
-        android:layout_marginEnd="36dp"
-        android:background="#fbf7f0"
-        android:text="@string/blocksign_up"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.551"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/blockLogin"
-        android:layout_width="108dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:background="@android:color/transparent"
-        android:text="@string/block_login"
-        android:textColor="#fbf7f0"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/toolbar"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/editTextEmailAddress"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="60dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:gravity="top"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress"
-        android:minHeight="35dp"
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/editTextEmailAddress3"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="60dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:gravity="top"
-        android:hint="@string/name"
-        android:inputType="textEmailAddress"
-        android:minHeight="35dp"
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/editTextEmailAddress6"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="60dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:gravity="top"
-        android:hint="@string/phonenumber"
-        android:inputType="textEmailAddress"
-        android:minHeight="35dp"
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress3"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/btnSignUp"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="104dp"
-        android:background="@drawable/button_background"
-        android:text="@string/signup"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress8" />
+        android:layout_height="wrap_content"
+        tools:context=".SignUp">
 
-    <ImageView
-        android:id="@+id/emailIcon"
-        android:layout_width="41dp"
-        android:layout_height="40dp"
-        android:contentDescription="@string/imageIcon"
-        app:layout_constraintEnd_toStartOf="@+id/editTextEmailAddress"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextEmailAddress"
-        tools:srcCompat="@tools:sample/avatars" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="327dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="8dp"
+            android:background="#5d54a4"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLogo2"
+            tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/nameIcon"
-        android:layout_width="41dp"
-        android:layout_height="40dp"
-        android:contentDescription="@string/imageIcon"
-        app:layout_constraintEnd_toStartOf="@+id/editTextEmailAddress3"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextEmailAddress3"
-        tools:srcCompat="@tools:sample/avatars" />
+        <EditText
+            android:id="@+id/textSgnUpPassword"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="60dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:minHeight="35dp"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhoneNumber"
+            tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/phoneNumberIcon"
-        android:layout_width="41dp"
-        android:layout_height="40dp"
-        android:contentDescription="@string/imageIcon"
-        app:layout_constraintEnd_toStartOf="@+id/editTextEmailAddress6"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextEmailAddress6"
-        tools:srcCompat="@tools:sample/avatars" />
+        <EditText
+            android:id="@+id/textSgnUpCfrm_Password"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="60dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/enterconfirmpassword"
+            android:inputType="textPassword"
+            android:minHeight="35dp"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSgnUpPassword"
+            tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/passwordIcon"
-        android:layout_width="41dp"
-        android:layout_height="40dp"
-        android:contentDescription="@string/imageIcon"
-        app:layout_constraintEnd_toStartOf="@+id/editTextEmailAddress7"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextEmailAddress7"
-        tools:srcCompat="@tools:sample/avatars" />
+        <TextView
+            android:id="@+id/textLogo2"
+            android:layout_width="315dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/lobster"
+            android:text="@string/textLogo"
+            android:textSize="39sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
-    <ImageView
-        android:id="@+id/confirmPasswordIcon"
-        android:layout_width="41dp"
-        android:layout_height="40dp"
-        android:contentDescription="@string/imageIcon"
-        app:layout_constraintEnd_toStartOf="@+id/editTextEmailAddress8"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextEmailAddress8"
-        tools:srcCompat="@tools:sample/avatars" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="180dp"
+            android:layout_height="109dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/carparklogo"
+            tools:ignore="ContentDescription" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/blockSignUpButton"
+            android:layout_width="100dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="36dp"
+            android:background="#fbf7f0"
+            android:text="@string/blocksign_up"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.551"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/blockLogin"
+            android:layout_width="108dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:text="@string/block_login"
+            android:textColor="#fbf7f0"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="@+id/toolbar"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextEmailAddress"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="60dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:minHeight="35dp"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextUserName"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="60dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:minHeight="35dp"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="60dp"
+            android:autofillHints=""
+            android:digits="0123456789+"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/phonenumber"
+            android:inputType="phone"
+            android:minHeight="35dp"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextUserName"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="56dp"
+            android:background="@drawable/button_background"
+            android:text="@string/signup"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSgnUpCfrm_Password"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/emailIcon"
+            android:layout_width="41dp"
+            android:layout_height="38dp"
+            android:contentDescription="@string/imageIcon"
+            app:layout_constraintEnd_toStartOf="@+id/editTextEmailAddress"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:src="@drawable/email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editTextEmailAddress"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/nameIcon"
+            android:layout_width="41dp"
+            android:layout_height="38dp"
+            android:src="@drawable/ic_round_person_24"
+            android:contentDescription="@string/imageIcon"
+            app:layout_constraintEnd_toStartOf="@+id/editTextUserName"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editTextUserName"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/phoneNumberIcon"
+            android:layout_width="41dp"
+            android:layout_height="38dp"
+            android:contentDescription="@string/imageIcon"
+            android:src="@drawable/ic_outline_phone_paused_24"
+            app:layout_constraintEnd_toStartOf="@+id/editTextPhoneNumber"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editTextPhoneNumber"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/passwordIcon"
+            android:layout_width="41dp"
+            android:layout_height="38dp"
+            android:src="@drawable/password"
+            android:contentDescription="@string/imageIcon"
+            app:layout_constraintEnd_toStartOf="@+id/textSgnUpPassword"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textSgnUpPassword"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/confirmPasswordIcon"
+            android:layout_width="41dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/password"
+            android:contentDescription="@string/imageIcon"
+            app:layout_constraintEnd_toStartOf="@+id/textSgnUpCfrm_Password"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordIcon"
+            tools:srcCompat="@tools:sample/avatars" />
 
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

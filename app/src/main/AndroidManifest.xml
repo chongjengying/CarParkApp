@@ -9,21 +9,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Payment"></activity>
-        <activity android:name=".ParkingHistory" />
+        <activity android:name=".MyBooking"
+            android:parentActivityName=".Homepage"
+            />
+        <activity
+            android:name=".DateTime"
+            android:parentActivityName=".PricingListLocation" />
+        <activity android:name=".addVehicle" />
+        <activity
+            android:name=".forgetPassword"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Payment" />
         <activity android:name=".ChangePassword" />
-        <activity android:name=".UserProfile" />
-        <activity android:name=".AddVehicle" />
-        <activity android:name=".MyVehicle" />
-        <activity android:name=".CarParkSlot" />
-        <activity android:name=".DateTime" />
-        <activity android:name=".PricingListLocation" />
-        <activity android:name=".LocationSelection" />
+        <activity
+            android:name=".UserProfile"
+            android:parentActivityName=".Homepage" />
         <activity android:name=".Homepage" />
-        <activity android:name=".SignUp"/>
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MyVehicle" />
+        <activity
+            android:name=".CarParkSlot"
+            android:parentActivityName=".DateTime" />
+        <activity
+            android:name=".PricingListLocation"
+            android:parentActivityName=".MainActivity2" />
+        <activity android:name=".MakeReservation" />
+        <activity
+            android:name=".MainActivity2"
+            android:parentActivityName=".Homepage" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">carparkapp</string>
+    <string name="app_name">Car Park Apps</string>
     <string name="imagelogo"></string>
     <string name="email">Enter Email</string>
     <string name="password">Enter Password</string>
@@ -30,13 +30,12 @@
     <string name="txtViewGender">Gender</string>
     <string name="imageProfile">Profile</string>
     <string name="btnSave">Save</string>
-    <string name="btnCancel">CANCEL</string>
     <string name="ediTextGender">Gender</string>
     <string name="paymentdetails">Payment Details</string>
     <string name="nameofcard">Name Of Card</string>
     <string name="editNameOFCard" />
-    <string name="cardnumber" />
-    <string name="textExpirationDate" />
+    <string name="cardnumber">Card Number</string>
+    <string name="textExpirationDate">Expiration Date</string>
     <string name="btnCheckOut">Check Out</string>
     <string name="securitycode">Security Code</string>
     <string name="CVC">CVC</string>
@@ -57,6 +56,52 @@
     <string name="vehicleDescription" />
     <string name="exampleVehicle">Eg: PSS 1234</string>
     <string name="vechicleplatenumber" />
+    <string name="forgetEmail">Enter Email</string>
+    <string name="resetBtn">Reset Password</string>
+    <string name="username" />
+    <string name="txtPersonName">Name</string>
+    <string name="txtPhoneNumber" />
+    <string name="txtVehicleNo">Plate Number</string>
+
+    <string name="home">Home</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_make_reservation">MakeReservation</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="pickATIme">Pick A Time</string>
+    <string name="pickADate">Pick A Date</string>
+    <string name="pickADuration"></string>
+    <string name="pickSlotTitle">Pick Your Slot</string>
+    <string name="btnConfirmSlots">Confirm Slot</string>
+    <string name="firstHourRate">First Hour</string>
+    <string name="thirdHourRate">3 Hours - 5 Hours</string>
+    <string name="maxHourRate">Maximum A Day</string>
+    <string name="nodata">No data</string>
+    <string name="selectDuration">Select Duration</string>
+
+    <string name="s1">S1</string>
+    <string name="s2">S2</string>
+    <string name="s3">S3</string>
+    <string name="s4">S4</string>
+    <string name="s5">S5</string>
+    <string name="s6">S6</string>
+    <string name="s7">S7</string>
+    <string name="s8">S8</string>
+    <string name="d1">D1</string>
+    <string name="d2">D2</string>
+    <string name="d3">D3</string>
+    <string name="carplatetxt">Car Plate</string>
+    <string name="editCarPlate">Car Plate</string>
+    <!--    <string name="s1">S1</string>-->
+    <!--    <string name="s1">S1</string>-->
+    <!--    <string name="s1">S1</string>-->
 
 
 </resources>
